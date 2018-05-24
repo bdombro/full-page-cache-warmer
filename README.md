@@ -21,7 +21,7 @@ yarn global add full-page-cache-warmer
 To install to cron, you may try this cron command to run daily:
 
 ```
-@daily /var/www/.nvm/versions/node/v6.14.1/bin/full-page-cache-warmer /var/www/aii-crawler-config.yml 2>&1 >> /var/www/aii-crawler-config.log
+@daily /var/www/.nvm/versions/node/v8.11.1/bin/full-page-cache-warmer --config=/var/www/aii-crawler-config.yml 2>&1 | tee -a /var/www/aii-crawler-config.log
 ```
 
 ## Usage

@@ -5,6 +5,12 @@
  * Requires Node v7.x or higher
  */
 
+console.log("\n\n***********************************************************************\n");
+console.log("FULL PAGE CACHE WARMER");
+var currentdate = new Date();
+console.log("Current Time: " + currentdate.getDay() + "/" + currentdate.getMonth() + "/" + currentdate.getFullYear() + " @ " + currentdate.getHours() + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds());
+console.log("\n***********************************************************************\n");
+
 const meow = require('meow');
 const puppeteer = require('puppeteer');
 const fs = require('fs-extra');
@@ -97,13 +103,10 @@ setInterval(() => { scriptDuration++; }, 1000);
 /**
  * Main
  */
-
-console.log("\nFULL PAGE CACHE WARMER");
 console.log("Thread Count: " + Math.min(config.urls.length, config.maxThreadCount) + "\n");
 console.log("URL Count: " + config.urls.length);
 console.log("Profile Count: " + profileCount);
 console.log("Total Count: " + config.urls.length * profileCount);
-
 
 var promises = [];
 var tryCount=0;
