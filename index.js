@@ -8,7 +8,7 @@
 console.log("\n\n***********************************************************************\n");
 console.log("FULL PAGE CACHE WARMER");
 var currentdate = new Date();
-console.log("Current Time: " + currentdate.getDay() + "/" + currentdate.getMonth() + "/" + currentdate.getFullYear() + " @ " + currentdate.getHours() + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds());
+console.log("Current Time: " + currentdate.getDate() + "/" + (currentdate.getMonth()+1)  + "/" + currentdate.getFullYear() + " @ "  + currentdate.getHours() + ":"  + currentdate.getMinutes() + ":" + currentdate.getSeconds());
 console.log("\n***********************************************************************\n");
 
 const meow = require('meow');
