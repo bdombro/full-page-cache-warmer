@@ -1,0 +1,45 @@
+###
+# User Options
+##
+
+# Paste list of urls here. You must indent
+# We are using yaml magic to allow easy pasting without dashes
+# Confused with the yaml? Hint: http://yaml-multiline.info/
+urlsRaw: |-
+  https://google.com
+  https://yahoo.com
+
+# Chrome and Safari each use a different order of encodings.
+# We crawl using both to ensure the cache is ready for both.
+# Unsure if this is required for Varnish, but it IS for Nginx
+# cache.
+browserSpecificExtraHttpHeaders:
+  Chrome:
+    Accept-Encoding: gzip, deflate, br
+  
+  Safari:
+    Accept-Encoding: br, gzip, deflate
+
+# Wait for loading until this number of connections are left.
+# Decrease if your snaps look like they didn't finish loading
+# Options are 0 and 2 only.
+networkIdleLevel: 0
+
+# Maximum number of CPU threads to consume. Note that upping this
+# too high will over-saturate your network and likely result in
+# timeouts.
+maxThreadCount: 4
+
+# Max Timeout per page in seconds
+maxTimeoutPerPage: 60
+
+# Max timeout for this process in seconds
+# Occasionally this script may hang, so 
+# having a timeout is a good idea.
+maxTimeout: 600
+
+###
+# Computed Options - Leave these alone
+##
+
+urls: []
