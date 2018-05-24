@@ -18,7 +18,11 @@ or
 yarn global add full-page-cache-warmer
 ```
 
-Note: Yarn isn't working right now for me because install hangs on a dependency (Puppeteer). If you have trouble with yarn, please try npm. Suggestions are also appreciated!
+To install to cron, you may try this cron command to run daily:
+
+```
+@daily /var/www/.nvm/versions/node/v6.14.1/bin/full-page-cache-warmer /var/www/aii-crawler-config.yml 2>&1 >> /var/www/aii-crawler-config.log
+```
 
 ## Usage
 ```
