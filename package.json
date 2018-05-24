@@ -1,6 +1,6 @@
 {
   "name": "full-page-cache-warmer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This app will crawl and fully load a list of URLs or sitemap.xml(soon) using Puppeteer (aka headless Chromium). It's the ONLY crawler that fully loads pages.",
   "main": "./index.js",
   "bin": {
@@ -15,7 +15,6 @@
     "node": ">= 7.0.0"
   },
   "dependencies": {
-    "full-page-cache-warmer": "https://github.com/bdombro/full-page-cache-warmer",
     "fs-extra": "*",
     "global": "^4.3.2",
     "js-yaml": "^3.11.0",
