@@ -103,10 +103,11 @@ setInterval(() => { scriptDuration++; }, 1000);
 /**
  * Main
  */
-console.log("Thread Count: " + Math.min(config.urls.length, config.maxThreadCount) + "\n");
+console.log("Thread Count: " + Math.min(config.urls.length, config.maxThreadCount));
 console.log("URL Count: " + config.urls.length);
 console.log("Profile Count: " + profileCount);
 console.log("Total Count: " + config.urls.length * profileCount);
+console.log("\n");
 
 var promises = [];
 var tryCount=0;

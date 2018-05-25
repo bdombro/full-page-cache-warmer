@@ -1,7 +1,7 @@
 # 🔥 full-page-cache-warmer 🔥
 
 ## About
-This app will crawl and fully load a list of URLs or sitemap.xml(soon) using Puppeteer (aka headless Chromium). It's the ONLY crawler that (1) fully loads pages and (2) mimics browser HTTP headers to NGINX or Varnish. At the same time, it's optimized to not bog down your system by re-using Chromium instances instead of creating a new instance per URL.
+GREAT FOR SPA APPS, OR ANY APP THAT MAKES LOTS OF XHR REQUESTS. This app will crawl and fully load a list of URLs or sitemap.xml(soon) using Puppeteer (aka headless Chromium). It's the ONLY crawler that (1) fully loads pages and (2) mimics browser HTTP headers to NGINX or Varnish. At the same time, it's optimized to not bog down your system by re-using Chromium instances instead of creating a new instance per URL.
 
 Checkout the sweet config options in (config-example.yml)[#].
 
