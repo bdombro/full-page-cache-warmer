@@ -9,6 +9,12 @@ urlsRaw: |-
   https://google.com
   https://yahoo.com
 
+
+# Extended to retreive URLs from sitemap.xml
+useSitemap: 1
+
+urlSitemap: https://example.com/sitemap.xml
+
 # Chrome and Safari each use a different order of encodings.
 # We crawl using both to ensure the cache is ready for both.
 # Unsure if this is required for Varnish, but it IS for Nginx
@@ -31,7 +37,7 @@ networkIdleLevel: 0
 maxThreadCount: 4
 
 # Max Timeout per page in seconds
-maxTimeoutPerPage: 60
+maxTimeoutPerPage: 240
 
 # Max timeout for this process in seconds
 # Occasionally this script may hang, so 
