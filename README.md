@@ -37,6 +37,13 @@ Examples
   🌈 unicorns 🌈
   $ full-page-cache-warmer --config=config.yml
   ...
+
+Reading from sitemap
+  In the config file use the options below to fetch the urls from sitemap.xml. setting useSitemap to 0 will read the urls from urlsRaw setting.
+  
+  useSitemap: 1
+  urlSitemap: https://www.example.com/sitemap.xml
+
 ```
 
 Then check the 'out' folders.

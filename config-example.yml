@@ -13,7 +13,7 @@ urlsRaw: |-
 # Extended to retreive URLs from sitemap.xml
 useSitemap: 1
 
-urlSitemap: https://example.com/sitemap.xml
+urlSitemap: https://www.example.com/sitemap.xml
 
 # Chrome and Safari each use a different order of encodings.
 # We crawl using both to ensure the cache is ready for both.
